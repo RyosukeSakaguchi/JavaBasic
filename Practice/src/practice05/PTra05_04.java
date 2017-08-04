@@ -21,9 +21,12 @@ public class PTra05_04 {
 		 * ●0～6が入力されている場合は、各曜日を出力した後プログラムを終了します
 		 *
 		 */
-		int i=0;
+//		int i=0;
+		boolean result = true;
 
-		while(i==0) {
+		while(result) {
+			result = false;
+			
 		// ①
 			System.out.println("0～6の整数を入力してください");
 
@@ -52,10 +55,9 @@ public class PTra05_04 {
 					System.out.println("土曜");
 					break;
 				default:
-					i--;
+					result = true;
 					break;			
 			}
-			i++;
 		}
 	}
 }

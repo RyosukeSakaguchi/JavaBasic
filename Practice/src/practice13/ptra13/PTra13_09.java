@@ -6,6 +6,8 @@
  */
 package practice13.ptra13;
 
+import practice13.common.Employee;
+
 public class PTra13_09 {
 
 	/*
@@ -32,8 +34,18 @@ public class PTra13_09 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		Employee[] employee = new Employee[NAMEDATA.length];
+		
 
 		// ★ 定数で定義されている各データを使用して、Employeeインスタンスを３つ作成してください
+		for(int i = 0; i < employee.length; i++) {
+			employee[i] = new Employee();
+			employee[i].setUserNm(NAMEDATA[i]);
+			employee[i].setMail(MAILDATA[i]);
+			employee[i].setPassword(PASSDATA[i]);
+			employee[i].setName(QUATERDATA[0][i]);
+			employee[i].setCount(Integer.parseInt(QUATERDATA[1][i]));
+		}
 
 	}
 }

@@ -15,6 +15,15 @@ public class PTra17_04 {
 		 * ★ strに入っている文字列を1文字ずつゆっくり表示させるプログラムを完成させてください
 		 * ※ Thread.sleep を使用すること
 		 */
+		String[] ar = str.split("");
+		
+		try{
+			for(int i = 0; i < ar.length; i++) {
+			  Thread.sleep(1000);
+			  System.out.print(ar[i]);
+			}
+		}catch (InterruptedException e){
+		}
 
 	}
 }

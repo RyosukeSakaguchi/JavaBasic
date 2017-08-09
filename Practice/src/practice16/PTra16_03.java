@@ -15,12 +15,9 @@ public class PTra16_03 {
 	 * 	・親クラス（Objectクラス）のtoStringの処理を行ってください
 	 *	・その後、改行をして「PTra16_03#toString()の処理」という文字列を連結してください
 	 */
-	java.util.Scanner scanner = new java.util.Scanner(System.in);
-	String line = scanner.nextLine();
-	
+
 	public String toString(){
-		System.out.println(line);
-		return "PTra16_03#toString()の処理";
+		return super.toString() + "\nPTra16_03#toString()の処理";
 	}
 
 	public static void main(String[] args) {

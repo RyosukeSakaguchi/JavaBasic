@@ -14,7 +14,7 @@ public class PTra07_06 {
 		int[] array;
 		array = new int[5];
 		for(int i = 0; i < array.length  ; i++) {
-			int index = new java.util.Random().nextInt(100001);
+			int index = new java.util.Random().nextInt(100000);
 			array[i] = index;
 			System.out.println(array[i]);
 		}

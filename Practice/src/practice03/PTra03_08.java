@@ -37,17 +37,18 @@ public class PTra03_08 {
 		 */
 		switch(num) {
 			case 1:
-				System.out.println("所持金は" + (money-150) + "円です。");	
+				money = money-150;
 				break;
 			case 2:
-				System.out.println("所持金は" + (money-160) + "円です。");	
+				money = money-160;
 				break;
 			case 3:
-				System.out.println("所持金は" + (money-200) + "円です。");	
+				money = money-200;
 				break;
 			default:
 				 System.out.println("1-3を選択してください");
 		}
+		System.out.println("所持金は" + money + "円です。");
 
 	}
 }
